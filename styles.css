@@ -43,5 +43,5 @@ body {
 }
 .highlighted {
     background-color: goldenrod;
-    border: 2px solid goldenrod;
+    border: 2px solid black;
 }
