@@ -41,3 +41,7 @@ body {
     margin-top: 20px;
     text-align: center;
 }
+.highlighted {
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+}
