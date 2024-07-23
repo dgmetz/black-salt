@@ -35,7 +35,7 @@ body {
     border: 2px solid black;
     transform: rotate(45deg);
     position: absolute;
-    cursor: pointer;
+    cursor: url('cursor_contrast.png'), auto;
 }
 
 .info-container {
