@@ -34,6 +34,7 @@ body {
 .left-section h1 {
     font-size: 60px; /* Adjust size as needed */
     margin: 20px 0 0 0; /* Adds some space below the title */
+	color:#987316;
 }
 
 .middle-section {
@@ -75,4 +76,10 @@ body {
 #table-of-contents {
     margin-top: auto; /* Centers table of contents */
     margin-bottom: auto; /* Centers table of contents */
+	color:#987316;
+	font-weight:bold;
+}
+
+.highlighted-toc {
+    color: goldenrod; /* Lighter shade of goldenrod */
 }
