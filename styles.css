@@ -2,19 +2,49 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     color: goldenrod;
+    margin: 0;
+    cursor: url('cursor.png'), auto; /* Apply the custom cursor */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    cursor: url('cursor_contrast.png'), auto;
 }
 
 .container {
     display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-section, .middle-section, .right-section {
+    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-section {
     flex-direction: column;
+    text-align: left;
+    justify-content: flex-start; /* Aligns title to the top */
+}
+
+.left-section h1 {
+    font-size: 60px; /* Adjust size as needed */
+    margin: 20px 0 0 0; /* Adds some space below the title */
+}
+
+.middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.right-section {
+    text-align: left;
 }
 
 .map-container {
@@ -22,10 +52,9 @@ body {
 }
 
 #map {
-    width: 600px;
-    height: auto;
+    height: calc(100vh - 40px); /* Adjust for padding */
+    width: auto;
     display: block;
-    margin: 0 auto;
 }
 
 .point {
@@ -35,14 +64,15 @@ body {
     border: 2px solid black;
     transform: rotate(45deg);
     position: absolute;
-    cursor: url('cursor_contrast.png'), auto;
+    cursor: url('cursor.png'), auto; /* Apply the custom cursor to points */
 }
 
-.info-container {
-    margin-top: 20px;
-    text-align: center;
-}
 .highlighted {
     background-color: goldenrod;
     border: 2px solid black;
+}
+
+#table-of-contents {
+    margin-top: auto; /* Centers table of contents */
+    margin-bottom: auto; /* Centers table of contents */
 }

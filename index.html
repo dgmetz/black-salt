@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Fantasy Map</title>
+    <title>Black Salt</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="map-container">
-            <img src="map.jpg" alt="Fantasy Map" id="map">
-            <div class="point" data-info="Point 1: Description" style="top: 20%; left: 30%;"></div>
-            <div class="point" data-info="Point 2: Description" style="top: 50%; left: 50%;"></div>
-            <div class="point" data-info="Point 3: Description" style="top: 70%; left: 20%;"></div>
+        <div class="left-section">
+            <h1>Black Salt</h1>
+            <ul id="table-of-contents">
+                <li data-point="point1">Bodine</li>
+                <li data-point="point2">Rouseau</li>
+                <li data-point="point3">???</li>
+            </ul>
         </div>
-        <div class="info-container">
-            <p id="info">Click on a point on the map to see details.</p>
+        <div class="middle-section">
+            <div class="map-container" id="map-container">
+                <img src="map.jpg" alt="Map of Black Salt" id="map">
+                <div class="point" id="point1" data-info="Bodine, the imperial bud" style="top: 22%; left: 53%;"></div>
+                <div class="point" id="point2"data-info="Rouseau, the city of Hearts" style="top: 25%; left: 80%;"></div>
+                <div class="point" id="point3" data-info="???" style="top: 75%; left: 16%;"></div>
+            </div>
+        </div>
+        <div class="right-section">
+            <p id="info">Click on the table of contents or a point on the map to see details.</p>
         </div>
     </div>
     <script src="script.js"></script>
