@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+	
 }
 
 .container {
@@ -45,6 +46,17 @@ body {
 }
 
 .right-section {
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+}
+.right-section h1 {
+    font-size: 60px; /* Adjust size as needed */
+    margin: 20px 0 0 0; /* Adds some space below the title */
+	color:#987316;
+}
+.right-section p{
+	margin-top: 40px;
     text-align: left;
 }
 
@@ -74,10 +86,11 @@ body {
 }
 
 #table-of-contents {
-    margin-top: auto; /* Centers table of contents */
+    margin-top: 40px; /* Centers table of contents */
     margin-bottom: auto; /* Centers table of contents */
 	color:#987316;
 	font-weight:bold;
+	
 }
 
 .highlighted-toc {
